@@ -17,7 +17,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-// Helper Sub-component for form inputs to keep the main code clean
 const InputGroup = ({ label, name, type = "text", placeholder, icon, value, onChange }) => (
   <div className="space-y-2">
     <label className="text-[10px] uppercase tracking-widest font-black text-gray-500 ml-1 flex items-center gap-2">
@@ -34,7 +33,6 @@ const InputGroup = ({ label, name, type = "text", placeholder, icon, value, onCh
   </div>
 );
 
-// MAIN COMPONENT - Must be "export default"
 export default function ProfileSetupPage() {
   const router = useRouter();
   const [isSaving, setIsSaving] = useState(false);
@@ -56,22 +54,19 @@ export default function ProfileSetupPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSaving(true);
-    
-    // Simulate a Blockchain transaction delay
+
     setTimeout(() => {
       setIsSaving(false);
-      // Redirect back to dashboard after "saving"
       router.push("/dashboard");
     }, 2000);
   };
 
   return (
     <div className="min-h-screen bg-[#05080a] text-slate-200 pb-12 relative overflow-hidden">
-      {/* Background Decorative Glow */}
+
       <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[100px] -z-10" />
 
-      {/* Header Navigation */}
       <nav className="border-b border-white/5 bg-black/40 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
           <button 
@@ -102,8 +97,7 @@ export default function ProfileSetupPage() {
         </motion.div>
 
         <form onSubmit={handleSubmit} className="space-y-8">
-          
-          {/* Section 1: Personal Info */}
+
           <section className="p-6 md:p-10 rounded-[2.5rem] bg-white/[0.03] border border-white/10 backdrop-blur-sm space-y-8">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400">
@@ -147,7 +141,6 @@ export default function ProfileSetupPage() {
             </div>
           </section>
 
-          {/* Section 2: Medical Vitals */}
           <section className="p-6 md:p-10 rounded-[2.5rem] bg-white/[0.03] border border-white/10 backdrop-blur-sm space-y-8">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
@@ -176,7 +169,6 @@ export default function ProfileSetupPage() {
             </div>
           </section>
 
-          {/* Submission Area */}
           <div className="flex flex-col items-center gap-6 pt-6">
             <button 
               type="submit"

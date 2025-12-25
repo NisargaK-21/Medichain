@@ -9,7 +9,6 @@ export default function SupportPage() {
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef(null);
 
-  // Auto-scroll to bottom on new message
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({
@@ -45,10 +44,8 @@ export default function SupportPage() {
   };
 
   return (
-    /* mt-24 ensures the chat UI starts BELOW your fixed header */
     <div className="flex flex-col h-[85vh] max-w-5xl mx-auto mt-24 mb-10 bg-[#020617] border border-white/5 rounded-[2rem] overflow-hidden shadow-2xl relative z-10">
-      
-      {/* --- HEADER --- */}
+
       <div className="px-6 py-4 bg-slate-900/40 border-b border-white/5 flex items-center justify-between backdrop-blur-xl">
         <div className="flex items-center gap-3">
           <div className="p-2 bg-blue-600 rounded-xl shadow-lg shadow-blue-500/20">
@@ -67,7 +64,7 @@ export default function SupportPage() {
         </div>
       </div>
 
-      {/* --- CHAT AREA --- */}
+
       <div 
         ref={scrollRef} 
         className="flex-1 overflow-y-auto p-6 space-y-6 scroll-smooth custom-scrollbar bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/5 via-transparent to-transparent"
@@ -119,7 +116,6 @@ export default function SupportPage() {
         )}
       </div>
 
-      {/* --- INPUT --- */}
       <form onSubmit={handleSend} className="p-5 bg-slate-900/30 border-t border-white/5">
         <div className="relative max-w-3xl mx-auto">
           <input
