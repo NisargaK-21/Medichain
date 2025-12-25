@@ -1,10 +1,24 @@
-# 🏥 MediChain | Decentralized Healthcare Ecosystem
-> **Empowering Patients through Blockchain Sovereignty and AI-Driven Support.**
+🏥 MediChain | Decentralized Healthcare Ecosystem
+Empowering Patients through Blockchain Sovereignty and AI-Driven Support.
 
 MediChain is a Next.js-powered decentralized platform that redefines medical record management. By combining the immutability of Ethereum-based smart contracts with the intelligence of Google Gemini AI, we provide a secure, transparent, and patient-centric healthcare experience.
 
+<div align="center">
 
-live demo:https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
+🌐 Explore the Live Demo:https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
+
+</div>
+
+📺 Project Showcase
+🛠 UI Preview
+The MediChain dashboard utilizes a Glassmorphic design with real-time blockchain sync.
+
+🎥 Live Walkthrough
+Onboarding: Connect your Ethereum wallet (MetaMask).
+Identity: Set up your profile—stored securely via smart contracts.
+AI Sentinel: Chat with our Gemini-powered assistant for privacy advice or platform help.
+Records: Upload medical document hashes and manage doctor access permissions.
+
 
 
 ## 📂 Project Structure
