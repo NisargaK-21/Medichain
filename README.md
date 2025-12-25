@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏥 MediChain | Decentralized Healthcare Ecosystem
+> **Empowering Patients through Blockchain Sovereignty and AI-Driven Support.**
 
-## Getting Started
+MediChain is a Next.js-powered decentralized platform that redefines medical record management. By combining the immutability of Ethereum-based smart contracts with the intelligence of Google Gemini AI, we provide a secure, transparent, and patient-centric healthcare experience.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+live demo:https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Project Structure
+medichain-website/
+├── app/                    # Next.js 14 App Router
+│   ├── api/                # Backend API Routes
+│   │   └── chat/           # Gemini AI Integration logic
+│   ├── support/            # AI Sentinel Support Page
+│   ├── dashboard/          # Patient/Doctor Management UI
+│   ├── profile_setup/      # User onboarding flows
+│   ├── components/         # Reusable UI (Navbar, Sidebar, Buttons)
+│   ├── globals.css         # Tailwind & Global Styles
+│   └── layout.js           # Root Layout with Navigation
+├── contracts/              # Blockchain logic
+│   └── MediChain.sol       # Core Smart Contract (Solidty)
+├── public/                 # Static assets (Images, Icons)
+├── .env.local              # Local Environment Variables (Secret)
+├── jsconfig.json           # JavaScript Configuration
+├── next.config.mjs         # Next.js Configuration
+├── package.json            # Dependencies & Scripts
+└── README.md               # Project Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Technical Architecture
+1. The Blockchain Layer (Solidity)
+MediChain.sol: Handles user registration, document hashing, and permissioned access control.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Gas Efficiency: Optimized for Polygon/Ethereum Layer 2 to ensure low-cost transactions for patients.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. The AI Sentinel (Google Gemini)
+Integrated via app/api/chat using the Gemini 1.5 Flash model.
 
-## Deploy on Vercel
+Provides real-time assistance regarding medical privacy, blockchain mechanics, and platform navigation.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Frontend & UI (Next.js & Tailwind)
+Glassmorphic Design: A futuristic theme built with Tailwind CSS.
+Framer Motion: Smooth, high-performance animations for a premium user experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Tech Stack
+Framework: Next.js 14
+Styling: Tailwind CSS
+Animations: Framer Motion
+Intelligence: Google Gemini AI
+Smart Contracts: Solidity
+Icons: Lucide React
+
+
+Security & Privacy
+On-Chain Verification: Only the hash of the medical document is stored on the blockchain.
+Off-Chain Storage: Actual documents remain encrypted, preventing data leaks.
+Patient Control: Patients can revoke doctor access at any time via a Smart Contract call.
+
+
