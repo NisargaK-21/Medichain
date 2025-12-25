@@ -51,14 +51,10 @@ medichain-website/
 Technical Architecture
 1. The Blockchain Layer (Solidity)
 MediChain.sol: Handles user registration, document hashing, and permissioned access control.
-
 Gas Efficiency: Optimized for Polygon/Ethereum Layer 2 to ensure low-cost transactions for patients.
-
 2. The AI Sentinel (Google Gemini)
 Integrated via app/api/chat using the Gemini 1.5 Flash model.
-
 Provides real-time assistance regarding medical privacy, blockchain mechanics, and platform navigation.
-
 3. Frontend & UI (Next.js & Tailwind)
 Glassmorphic Design: A futuristic theme built with Tailwind CSS.
 Framer Motion: Smooth, high-performance animations for a premium user experience.
