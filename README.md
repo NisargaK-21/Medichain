@@ -20,7 +20,12 @@ AI Sentinel: Chat with our Gemini-powered assistant for privacy advice or platfo
 Records: Upload medical document hashes and manage doctor access permissions.
 <br/>
 
-
+MediChain (Decentralized App)
+In your project, the "Backend" and "Database" are replaced by the Blockchain:
+Frontend: Still your React/Next.js code.
+Backend Logic: This is now a Smart Contract (code that lives on the blockchain).
+Database: This is the Blockchain Ledger (where the records are stored forever).
+<br/>
 
 
 ## 📂 Project Structure
