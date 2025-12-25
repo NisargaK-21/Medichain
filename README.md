@@ -5,7 +5,7 @@ MediChain is a Next.js-powered decentralized platform that redefines medical rec
 
 <div align="center">
 
-🌐 Explore the Live Demo:https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
+🌐 Explore the Live Demo:[https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/](https://medichain-website.vercel.app/)
 
 </div>
 
