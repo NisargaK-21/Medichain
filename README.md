@@ -21,6 +21,8 @@ Records: Upload medical document hashes and manage doctor access permissions.
 
 
 
+
+
 ## 📂 Project Structure
 medichain-website/
 ├── app/                    # Next.js 14 App Router
@@ -43,6 +45,9 @@ medichain-website/
 
 
 
+
+
+
 Technical Architecture
 1. The Blockchain Layer (Solidity)
 MediChain.sol: Handles user registration, document hashing, and permissioned access control.
@@ -57,6 +62,9 @@ Provides real-time assistance regarding medical privacy, blockchain mechanics, a
 3. Frontend & UI (Next.js & Tailwind)
 Glassmorphic Design: A futuristic theme built with Tailwind CSS.
 Framer Motion: Smooth, high-performance animations for a premium user experience.
+
+
+
 
 
 
