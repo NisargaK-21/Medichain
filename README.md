@@ -12,13 +12,13 @@ MediChain is a Next.js-powered decentralized platform that redefines medical rec
 📺 Project Showcase
 🛠 UI Preview
 The MediChain dashboard utilizes a Glassmorphic design with real-time blockchain sync.
-
+<br/>
 🎥 Live Walkthrough
 Onboarding: Connect your Ethereum wallet (MetaMask).
 Identity: Set up your profile—stored securely via smart contracts.
 AI Sentinel: Chat with our Gemini-powered assistant for privacy advice or platform help.
 Records: Upload medical document hashes and manage doctor access permissions.
-
+<br/>
 
 
 
@@ -43,7 +43,7 @@ medichain-website/
 ├── package.json            # Dependencies & Scripts
 └── README.md               # Project Documentation
 
-
+<br/>
 
 
 
@@ -64,7 +64,7 @@ Glassmorphic Design: A futuristic theme built with Tailwind CSS.
 Framer Motion: Smooth, high-performance animations for a premium user experience.
 
 
-
+<br/>
 
 
 
@@ -75,7 +75,7 @@ Animations: Framer Motion
 Intelligence: Google Gemini AI
 Smart Contracts: Solidity
 Icons: Lucide React
-
+<br/>
 
 Security & Privacy
 On-Chain Verification: Only the hash of the medical document is stored on the blockchain.
