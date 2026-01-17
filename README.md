@@ -6,14 +6,19 @@ MediChain is a Next.js-powered decentralized platform that redefines medical rec
 
 <div align="center">
 
+<<<<<<< HEAD
 ## 🌐 [Explore Live Demo](https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/)
 
 *https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/*
+=======
+🌐 Explore the Live Demo:[https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/](https://medichain-website.vercel.app/)
+>>>>>>> a2d88219f855dbc9c8415fe1bc70dddb34d6b3af
 
 </div>
 
 ---
 
+<<<<<<< HEAD
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
@@ -29,6 +34,14 @@ MediChain is a Next.js-powered decentralized platform that redefines medical rec
 - [Smart Contracts](#-smart-contracts)
 - [Contributing](#-contributing)
 - [License](#-license)
+=======
+MediChain (Decentralized App)
+In your project, the "Backend" and "Database" are replaced by the Blockchain:
+Frontend: Still your React/Next.js code.
+Backend Logic: This is now a Smart Contract (code that lives on the blockchain).
+Database: This is the Blockchain Ledger (where the records are stored forever).
+<br/>
+>>>>>>> a2d88219f855dbc9c8415fe1bc70dddb34d6b3af
 
 ---
 
