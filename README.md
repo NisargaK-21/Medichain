@@ -1,6 +1,6 @@
 # MediChain - Decentralized Healthcare Platform
 
-**Live Demo:** https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
+**Live Demo:** [https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/](https://medichain-website.vercel.app/)
 
 ## What is MediChain?
 
