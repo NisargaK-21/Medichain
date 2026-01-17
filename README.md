@@ -143,7 +143,7 @@ Built for decentralized healthcare 🏥⛓️
 
 ---
 
-**Live:** https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
+**Live:** [https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/](https://medichain-website.vercel.app/)
 
 
 ---
