@@ -1,58 +1,16 @@
-# 🏥 MediChain | Decentralized Healthcare Ecosystem
+# MediChain - Decentralized Healthcare Platform
 
-> Empowering Patients through Blockchain Sovereignty and AI-Driven Support
+**Live Demo:** https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
 
-MediChain is a Next.js-powered decentralized platform that redefines medical record management. By combining the immutability of Ethereum-based smart contracts with the intelligence of Google Gemini AI, we provide a secure, transparent, and patient-centric healthcare experience.
+## What is MediChain?
 
-<div align="center">
+MediChain is a decentralized healthcare platform where patients control their medical records using blockchain and AI. Instead of centralized hospitals storing your data, you own it on the blockchain.
 
-<<<<<<< HEAD
-## 🌐 [Explore Live Demo](https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/)
-
-*https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/*
-=======
-🌐 Explore the Live Demo:[https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/](https://medichain-website.vercel.app/)
->>>>>>> a2d88219f855dbc9c8415fe1bc70dddb34d6b3af
-
-</div>
-
----
-
-<<<<<<< HEAD
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Quick Start](#-quick-start)
-- [Project Structure](#-project-structure)
-- [Technical Architecture](#-technical-architecture)
-- [Installation & Setup](#-installation--setup)
-- [Environment Variables](#-environment-variables)
-- [How to Use](#-how-to-use)
-- [Security & Privacy](#-security--privacy)
-- [Smart Contracts](#-smart-contracts)
-- [Contributing](#-contributing)
-- [License](#-license)
-=======
-MediChain (Decentralized App)
-In your project, the "Backend" and "Database" are replaced by the Blockchain:
-Frontend: Still your React/Next.js code.
-Backend Logic: This is now a Smart Contract (code that lives on the blockchain).
-Database: This is the Blockchain Ledger (where the records are stored forever).
-<br/>
->>>>>>> a2d88219f855dbc9c8415fe1bc70dddb34d6b3af
-
----
-
-## 🎯 Overview
-
-MediChain revolutionizes healthcare by creating a decentralized ecosystem where patients maintain complete sovereignty over their medical records. Using blockchain technology and AI-powered assistance, we ensure:
-
-- **Privacy First**: Only document hashes stored on-chain, actual medical records remain encrypted
-- **Patient Control**: Full authority over who accesses your medical data
-- **AI-Powered Support**: Real-time assistance via Gemini AI for medical privacy guidance
-- **Transparent & Immutable**: All transactions and changes recorded on the blockchain
+- **Decentralized Records**: Medical record hashes stored on Ethereum blockchain
+- **Patient Control**: Grant/revoke doctor access instantly via smart contracts
+- **AI Assistant**: Gemini-powered chatbot for medical privacy guidance
+- **Secure & Private**: Only hashes on-chain, documents encrypted off-chain
+- **Immutable**: All transactions permanently recorded on blockchain
 
 ---
 
@@ -89,292 +47,105 @@ MediChain revolutionizes healthcare by creating a decentralized ecosystem where 
 | **Animations** | Framer Motion |
 | **AI Integration** | Google Gemini 1.5 Flash |
 | **Smart Contracts** | Solidity (Ethereum/Polygon) |
-| **Icons** | Lucide React |
-| **Language** | JavaScript/JSX |
+## Tech Stack
 
----
+- **Frontend**: Next.js 14, Tailwind CSS, Framer Motion
+- **Blockchain**: Solidity (Ethereum/Polygon)
+- **AI**: Google Gemini 1.5 Flash
+- **Web3**: MetaMask integration
+- **Icons**: Lucide React
 
-## 🚀 Quick Start
+## Features
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-- MetaMask or compatible Web3 wallet
-- Google Gemini API key
+1. **Connect Wallet** - MetaMask integration for secure authentication
+2. **Patient Profile** - Set up healthcare identity on blockchain
+3. **Medical Records** - Upload & manage document hashes securely
+4. **Access Control** - Grant/revoke doctor permissions instantly
+5. **AI Chat** - Get medical privacy guidance from Gemini AI
+6. **Dashboard** - Real-time view of records and blockchain transactions
 
-### Installation
+## How It Works
+
+**Architecture:**
+- **Smart Contract** (MediChain.sol) - Handles user registration, document hashing, access control
+- **Frontend** (Next.js) - User interface with glassmorphic design
+- **AI Assistant** - Gemini-powered support for medical privacy questions
+
+**Workflow:**
+1. Patient connects MetaMask wallet
+2. Creates profile stored on blockchain
+3. Uploads medical documents (only hashes go on-chain)
+4. Can grant/revoke doctor access anytime
+5. AI assistant provides privacy guidance
+
+## Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/medichain-website.git
-cd medichain-website
-
 # Install dependencies
 npm install
-# or
-yarn install
 
-# Create environment file
+# Set up environment variables
 cp .env.example .env.local
 
-# Start development server
-npm run dev
-# or
-yarn dev
-```
+# Add to .env.local:
+# NEXT_PUBLIC_GEMINI_API_KEY=your_key_here
+# NEXT_PUBLIC_RPC_URL=your_rpc_url_here
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
-
----
-
-## 📂 Project Structure
-
-```
-medichain-website/
-├── app/                         # Next.js 14 App Router
-│   ├── api/
-│   │   └── chat/               # Gemini AI Integration API
-│   ├── about_us/               # About Us Page
-│   ├── dashboard/              # Patient/Doctor Dashboard UI
-│   ├── support/                # AI Sentinel Support Page
-│   ├── profile_setup/          # User Onboarding & Profile Setup
-│   ├── Login/                  # Authentication Page
-│   ├── components/
-│   │   ├── Navbar.js           # Navigation Header
-│   │   ├── Footer.js           # Footer Component
-│   │   ├── Button.js           # Reusable Button
-│   │   ├── Card.js             # Reusable Card
-│   │   └── Modal.js            # Modal Dialog
-│   ├── globals.css             # Global Styles & Tailwind
-│   ├── layout.js               # Root Layout
-│   └── page.js                 # Home Page
-├── public/                      # Static Assets (Images, Icons, Fonts)
-├── MediChain.sol               # Core Smart Contract
-├── next.config.mjs             # Next.js Configuration
-├── tailwind.config.js          # Tailwind CSS Configuration
-├── jsconfig.json               # JavaScript Path Aliases
-├── package.json                # Dependencies & Scripts
-├── eslint.config.mjs           # ESLint Configuration
-├── postcss.config.mjs          # PostCSS Configuration
-└── README.md                   # This File
-```
-
----
-
-## 🏗 Technical Architecture
-
-### 1. **The Blockchain Layer (Solidity)**
-- **Smart Contract**: `MediChain.sol`
-- **Responsibilities**:
-  - User registration & identity management
-  - Document hash storage and verification
-  - Permissioned access control logic
-  - Doctor authorization workflows
-  - Gas-optimized transactions
-- **Network**: Ethereum / Polygon Layer 2 (optimized for low costs)
-
-### 2. **The AI Sentinel (Google Gemini)**
-- **Integration**: `app/api/chat/route.js`
-- **Model**: Gemini 1.5 Flash
-- **Capabilities**:
-  - Real-time medical privacy guidance
-  - Blockchain mechanics explanation
-  - Platform navigation assistance
-  - 24/7 patient support
-
-### 3. **Frontend & UI (Next.js + Tailwind)**
-- **Design Pattern**: Glassmorphism
-- **Framework**: Next.js 14 with App Router
-- **Styling**: Tailwind CSS + Custom CSS
-- **Animations**: Framer Motion for smooth transitions
-- **State Management**: React Hooks
-- **Web3 Integration**: Ethereum provider for wallet connection
-
----
-
-## 💻 Installation & Setup
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/yourusername/medichain-website.git
-cd medichain-website
-```
-
-### 2. Install Dependencies
-```bash
-npm install
-```
-
-### 3. Configure Environment Variables
-Create `.env.local` file in the root directory:
-```bash
-cp .env.example .env.local
-```
-
-### 4. Start Development Server
-```bash
+# Run development server
 npm run dev
 ```
 
-### 5. Build for Production
-```bash
-npm run build
-npm start
+Open http://localhost:3000
+
+## Security
+
+- **Hashing**: Only cryptographic hashes stored on blockchain
+- **Encryption**: Actual documents encrypted and stored off-chain
+- **Smart Contracts**: Immutable access control logic
+- **Revocation**: Instant access removal capability
+- **Audit Trail**: Complete transaction history on blockchain
+
+## Project Structure
+
+```
+app/
+  ├── api/chat/           # Gemini AI integration
+  ├── dashboard/          # Patient/doctor interface
+  ├── profile_setup/      # Onboarding flow
+  ├── support/            # AI assistant page
+  └── components/         # Reusable UI components
+MediChain.sol             # Smart contract
+public/                   # Static assets
 ```
 
----
+## Smart Contract
 
-## 🔧 Environment Variables
+`MediChain.sol` handles:
+- User registration
+- Document hash storage
+- Access permissions
+- Doctor authorization
+- Transaction logging
 
-Create a `.env.local` file with the following variables:
+Deployed on Ethereum/Polygon with gas optimization for low costs.
 
-```env
-# Google Gemini API
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+## Future Enhancements
 
-# Ethereum/Blockchain Configuration
-NEXT_PUBLIC_RPC_URL=https://eth-mainnet.g.alchemy.com/v2/your_key
-NEXT_PUBLIC_CONTRACT_ADDRESS=0x...your_contract_address...
+- Multi-signature authorization for sensitive operations
+- IPFS integration for encrypted document storage
+- Mobile app for iOS/Android
+- Insurance provider integration
+- Telemedicine features
 
-# Application
-NEXT_PUBLIC_APP_NAME=MediChain
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
+## Team
 
-> **Note**: Variables prefixed with `NEXT_PUBLIC_` are accessible in the browser. Never expose sensitive keys in these variables.
-
----
-
-## 🎯 How to Use
-
-### For Patients:
-1. **Connect Wallet** - Click "Connect MetaMask" and authorize the connection
-2. **Setup Profile** - Complete your identity setup with personal health information
-3. **Upload Records** - Add medical document hashes to your secure vault
-4. **Grant Access** - Authorize specific doctors to view your records
-5. **Chat with AI** - Use the AI Sentinel for medical privacy guidance
-
-### For Doctors:
-1. **Connect Wallet** - Connect your Ethereum wallet
-2. **Register as Provider** - Complete doctor verification
-3. **Access Records** - View patient records they've granted you access to
-4. **Manage Permissions** - Handle patient access requests and authorizations
-
-### Features Walkthrough:
-- **🔐 Security**: All documents are hashed before blockchain storage
-- **📋 Dashboard**: Real-time view of your medical records and permissions
-- **🤖 AI Support**: Ask the Gemini-powered assistant any healthcare questions
-- **⛓️ Blockchain**: Transparent, immutable record of all transactions
+Built for decentralized healthcare 🏥⛓️
 
 ---
 
-## 🔒 Security & Privacy
+**Live:** https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/
 
-### Privacy-First Architecture
-- **On-Chain Verification**: Only cryptographic hashes of medical documents are stored on the blockchain
-- **Off-Chain Storage**: Actual medical documents remain encrypted and stored securely off-chain
-- **Zero-Knowledge Proofs**: Potential future integration for enhanced privacy
-
-### Patient Control
-- **Granular Permissions**: Grant access at the document level
-- **Instant Revocation**: Revoke doctor access at any time via smart contract
-- **Audit Trail**: Complete history of all access attempts logged on blockchain
-- **Encrypted Communication**: All data transmission uses industry-standard encryption
-
-### Best Practices
-- Never share your private keys or seed phrases
-- Always verify smart contract addresses before interaction
-- Use hardware wallets for high-value transactions
-- Enable two-factor authentication where available
 
 ---
-
-## ⛓️ Smart Contracts
-
-### MediChain.sol
-The core smart contract manages:
-- **User Registration**: Stores patient and doctor identities
-- **Document Management**: Maintains document hash registry
-- **Access Control**: Manages who can view what records
-- **Transactions**: Records all state changes immutably
-
-### Deployment
-- **Network**: Ethereum / Polygon (Layer 2 for low costs)
-- **Language**: Solidity
-- **Status**: Live and audited
-
-### Key Functions
-```solidity
-- registerUser() - Register as patient or doctor
-- uploadDocumentHash() - Add a medical record hash
-- grantAccess() - Authorize a doctor to view records
-- revokeAccess() - Remove doctor authorization
-- getDocuments() - Retrieve your medical records
-- auditLog() - View transaction history
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### Steps to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes
-4. Commit with clear messages (`git commit -m 'Add AmazingFeature'`)
-5. Push to the branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
-
-### Development Guidelines
-- Follow Next.js best practices
-- Use Tailwind CSS for styling
-- Write clean, readable code
-- Test thoroughly before submitting
-- Update documentation as needed
-
-### Reporting Issues
-Found a bug? Please create an issue with:
-- Clear description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Screenshots/logs if applicable
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Support
-
-For questions, suggestions, or issues:
-- 📧 Email: support@medichain.io
-- 💬 Chat with AI Sentinel: Visit the Support page on the platform
-- 🐛 Report bugs: Create an issue on GitHub
-- 💡 Feature requests: Open a discussion on GitHub
-
----
-
-## 🙏 Acknowledgments
-
-- **Google Gemini** for AI capabilities
-- **Ethereum & Polygon** for blockchain infrastructure
-- **Next.js & Vercel** for the exceptional framework
-- **Tailwind CSS** for beautiful styling utilities
-- **Framer Motion** for smooth animations
-
----
-
-<div align="center">
-
-**[🌐 Visit Live Demo](https://medichain-website-ox4unmz2k-nisarga-s-projects.vercel.app/)**
-
-Made with ❤️ for decentralized healthcare
-
-</div>
 
 
